@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0 10px;
+    background: linear-gradient(aqua, #8585ec,#c869ee,rgb(23, 23, 85));
+}
+
+header, footer{
+    background-color: #2b2323;
+    height: 120px;
+    color: whitesmoke;
+}
+
+main{
+    height: 400px;
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover{
+    color: aquamarine;
+}
+
+/*inicio header*/
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo h2{
+    margin-top: 10px;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacion{
+    width: 50%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* inicio main */
+
+.main__hero{
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.hero__contenido{
+    width: 750px;
+}
+
+.hero__contenido h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.hero__contenido p{
+    margin-top: 1.5rem;
+}
+
+.hero__imagen{
+    width: 45%;
+    margin-top: 15px;
+    transition: width 2s;
+}
+
+.hero__imagen:hover{
+    width: 720px;
+}
+
+/*inicio section*/
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 8rem 0;
+    text-align: center;
+
+}
+
+.card{
+    width: 400px;
+    height: 250px;
+    background-color: #68b6e4;
+    animation-name: cambio_de_fondo;
+    animation-duration: 8s;
+}
+
+.card h2{
+    margin-top:  10px;
+}
+
+.card p{
+    padding: 15px;
+}
+
+/*inicio footer*/
+
+.footer{
+    padding: 20px;
+}
+.footer__contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+@keyframes cambio_de_fondo{
+    from{background-color: #68b6e4;}
+    to{background-color: #7bdf77;}
+}
